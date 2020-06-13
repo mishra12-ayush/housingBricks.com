@@ -1,0 +1,20 @@
+<div class="landingdiv">
+
+<br><br><br>
+<div fxFlex fxLayout="column wrap" fxLayoutAlign="space-evenly start" fxLayoutGap="20px" >
+  <h1 class="grab">Hand picked projects for you  <i class="fa fa-hand-o-right" aria-hidden="true"></i> &nbsp;    <button class="dealbtn" type="button" name="button">DEALS</button></h1><hr>
+  <br><br><br>
+<div  *ngFor="let land of landing">
+
+      <mat-card class="card">
+        <mat-card-header><mat-card-title><h2>{{land.heading}}</h2></mat-card-title></mat-card-header>
+        <img mat-card-image src="{{land.image}}" alt="housingBricks">
+        <mat-card-content>
+          <h2>{{land.title}}</h2>
+          <p>{{land.description}}</p>
+        </mat-card-content>
+        <mat-card-actions><button mat-button>Find more</button></mat-card-actions>
+      </mat-card>
+      <hr>
+</div>
+</div>

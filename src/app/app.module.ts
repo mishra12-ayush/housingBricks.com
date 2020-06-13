@@ -13,12 +13,16 @@ import 'hammerjs';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
+
+import {LandingService} from './services/landing.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +34,9 @@ import { FooterComponent } from './footer/footer.component';
     MatInputModule,
     MatListModule
   ],
-  providers: [],
+  providers: [
+    LandingService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

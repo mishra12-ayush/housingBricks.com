@@ -29,3 +29,16 @@ $header-grey: #2e2e2d;
 body{
   background-color: #ebeced;
 }
+.btnfeedback{
+  width: 120px;
+  height: 40px;
+  position: fixed;
+  top: 400px;
+  left: -39px;
+  transform: rotate(90deg);
+  background-color:$header-grey ;
+  color: #b87e2e;
+  text-shadow: 2px;
+  font-size: 17px;
+  font-weight: bolder;
+}
