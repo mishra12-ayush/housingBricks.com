@@ -1,0 +1,43 @@
+img{
+  width: 150px;
+  height: 60px;
+}
+.jumbotron{
+  background-image: url("/assets/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+}
+form{
+  position: absolute;
+  top: 300px;
+  left: 400px;
+}
+input{
+  width: 600px;
+  height:30px;
+  border: solid 2px grey;
+}
+button{
+  width: 100px;
+  height: 30px;
+  background-color: #347deb;
+  border: solid 2px grey;
+  color: white;
+}
+select{
+  paadding: 3px;
+  margin: 10px;
+  width: 120px;
+  height: 35px;
+  border-radius: 8px;
+  border: solid 2px grey;
+}
+h1{
+  color: white;
+  font-weight: bolder;
+}
+h2{
+  color: white;
+  font-weight: bold;
+}
