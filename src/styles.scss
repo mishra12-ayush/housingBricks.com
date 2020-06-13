@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'variables';
+@import '../node_modules/font-awesome/scss/font-awesome';
+
+$header-grey: #2e2e2d;
+
+*{
+  padding: 0;
+  margin: 0;
+}
+.flex-spacer {
+  flex: 1 1 auto;
+}
+
+.headercolour{
+  background-color:$header-grey ;
+  color: #b87e2e;
+  text-shadow: 2px
+
+}
+
+.container {
+    margin: 20px;
+    display:flex;
+    padding: 16px;
+}
+body{
+  background-color: #ebeced;
+}
