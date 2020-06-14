@@ -1,0 +1,91 @@
+<div class="container"
+  fxLayout="column"
+  fxLayoutGap="10px">
+
+  <div fxFlex>
+    <div>
+        <h3>About Us</h3>
+        <hr>
+    </div>
+  </div>
+
+  <div fxFlex>
+    <div fxLayout="row" fxLayout.gt-sm="row">
+      <div fxFlex="70">
+        <h2>Our History</h2>
+        <p>Housingbricks.com is a high-end property portal that caters to a global market with its unique services and novel online features. Having been launched in the year 2015. Housingbricks has quickly risen to being the No. 1 Property Portal </p><br>
+        <p>The Housingbricks design is based on rigorous research, unique product developments, and innovative initiative which has been readily accepted by users. In an attempt to best serve the users, features on the Housingbricks realty portal are constantly invented, evaluated and upgraded.</p><br>
+        <p>Till date, Housingbricks.com has successfully hosted 75 domestic property shows </p>
+      </div>
+      <div fxFlex="30">
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>
+            <h2>Facts At a Glance</h2>
+            </mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <dl>
+              <dt>Started :</dt>
+              <dd>3 Feb. 2015</dd>
+              <dt>Major Stake Holder :</dt>
+              <dd>Soft Bank Group</dd>
+              <dt>Last Year's Turnover :</dt>
+              <dd>$1,250,375</dd>
+              <dt>Employees :</dt>
+              <dd>40</dd>
+            </dl>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+
+  <div fxFlex>
+    <div fxFlex fxLayout="row" fxLayoutGap="50px" class="aboutcard">
+      <div fxflex="33">
+      <mat-card>
+        <img mat-card-image src="/assets/images/total prop.png" alt="">
+        <mat-card-content>
+          <h2>3,477+</h2>
+          <h3>Properties & Counting...</h3>
+          <p>  </p>
+        </mat-card-content>
+      </mat-card>
+      </div>
+      <div fxflex="33">
+      <mat-card>
+        <img mat-card-image src="/assets/images/prop listed.png" alt="">
+        <mat-card-content>
+          <h2>938</h2>
+          <h3>Properties List</h3>
+          <p>In last month</p>
+        </mat-card-content>
+      </mat-card>
+      </div>
+      <div fxflex="33">
+      <mat-card>
+        <img mat-card-image src="/assets/images/sellers contacted.png" alt="">
+        <mat-card-content>
+          <h2>1,512+</h2>
+          <h3>Sellers Contacted</h3>
+          <p>In last month</p>
+        </mat-card-content>
+      </mat-card>
+      </div>
+    </div>
+  </div>
+
+  <div fxFlex>
+    aaaaaa
+    <mat-list fxFlex>
+      bbbbb
+      <mat-list-item  *ngFor="let lead of Leader">
+        #b87e2e;
+        <img matListAvatar src="{{lead.image}}" alt="{{lead.name}}">
+        <h3>{{lead.name}}</h3>
+        <p>{{lead.designation}}</p>
+      </mat-list-item>
+    </mat-list>
+  </div>
+</div>

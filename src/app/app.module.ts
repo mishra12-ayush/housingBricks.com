@@ -7,22 +7,31 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
 import {MatListModule} from '@angular/material/list';
+import { AppRoutingModule } from './app-routing/app-routing.module';
 
 import 'hammerjs';
+
+import {LandingService} from './services/landing.service';
+import {LeaderService} from './services/leader.service';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { DealsComponent } from './deals/deals.component';
 
-import {LandingService} from './services/landing.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    AboutComponent,
+    ContactusComponent,
+    DealsComponent
   ],
   imports: [
     BrowserModule,
@@ -32,10 +41,12 @@ import {LandingService} from './services/landing.service';
     MatButtonModule,
     MatCardModule,
     MatInputModule,
-    MatListModule
+    MatListModule,
+    AppRoutingModule
   ],
   providers: [
-    LandingService
+    LandingService,
+    LeaderService
   ],
   bootstrap: [AppComponent]
 })

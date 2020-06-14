@@ -5,7 +5,7 @@ img{
 .jumbotron{
   background-image: url("/assets/images/background.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 600px;
 
 }
 form{
@@ -40,4 +40,7 @@ h1{
 h2{
   color: white;
   font-weight: bold;
+}
+.btnheader{
+  color: #b87e2e;
 }
