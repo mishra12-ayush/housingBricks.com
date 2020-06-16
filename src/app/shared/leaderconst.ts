@@ -31,4 +31,4 @@ export const leaderconst: leaderclass[] =[
     designation:'Inventory Management',
     image:'/assets/images/inventory.jpg'
   }
-]
+];

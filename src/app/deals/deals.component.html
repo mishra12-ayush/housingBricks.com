@@ -1,3 +1,92 @@
-<p>
-  deals works!
-</p>
+<div fxFlex flexLayout="row" flwxLayoutGap="30px" class="container">
+
+
+    <div fxFlex="25" class="">
+      <h1>Refine Search</h1><hr><br><br>
+      <form class="">
+        <label for="property">Property</label><br>
+          <select name="property" class="select">
+            <option>Appartment</option>
+            <option>House</option>
+            <option>Townhouse</option>
+            <option >Unit</option>
+          </select>
+          <br><br>
+
+          <label for="property">Min. Price</label><br>
+            <select name="property" class="select">
+              <option>$200,000</option>
+              <option>$250,000</option>
+              <option>$300,000</option>
+              <option >$350,000</option>
+            </select>
+            <br><br>
+
+            <label for="property">Max. Property</label><br>
+              <select name="property" class="select">
+                <option>$300,000</option>
+                <option>$400,000</option>
+                <option>$500,000</option>
+                <option >$600,000</option>
+              </select>
+              <br><br>
+
+              <label for="property">Min. Beds</label><br>
+                <select name="property" class="select">
+                  <option>1 Bed</option>
+                  <option>2 Beds</option>
+                  <option>3 Beds</option>
+                  <option >4 Beds</option>
+                </select>
+                <br><br>
+
+                <label for="property">Max. Beds</label><br>
+                  <select name="property" class="select">
+                    <option>2 Beds</option>
+                    <option>3 Beds</option>
+                    <option>4 Beds</option>
+                    <option >5 Beds</option>
+                  </select>
+                  <br><br>
+
+                  <label for="property">Bathrooms</label><br>
+                    <select name="property" class="select">
+                      <option>1+</option>
+                      <option>2+</option>
+                      <option>3+</option>
+                      <option >4+</option>
+                    </select>
+                    <br><br>
+
+                    <label for="property">Carports</label><br>
+                      <select name="property" class="select">
+                        <option>1+</option>
+                        <option>2+</option>
+                        <option>3+</option>
+                        <option >4+</option>
+                      </select>
+                      <br><br>
+          <button type="button" class="updatebtn"><b>Update</b></button>
+      </form>
+    </div>
+
+
+    <div fxFlex="75" fxLayout="column" fxLayoutAlign="space-around center" >
+      <h1>Results :</h1> <hr><br><br>
+    <div fxFlex   *ngFor="let prop of property">
+
+      <mat-card class="propertycard" >
+        <mat-card-header ><mat-card-subtitle><b>Agent Name :</b>{{prop.agent}}</mat-card-subtitle></mat-card-header>
+        <img mat-card-image src="{{prop.image}}" alt="Image">
+        <mat-card-content>
+          <h2>{{prop.address}}</h2><br>
+          <p>{{prop.description}}</p> <br>
+          <p><i class="fa fa-bed" aria-hidden="true"></i>{{prop.beds}} &nbsp; &nbsp; &nbsp;<i class="fa fa-bath" aria-hidden="true"></i>{{prop.bathrooms}} &nbsp; &nbsp; &nbsp; <i class="fa fa-car" aria-hidden="true"></i>{{prop.carsize}}</p><hr>
+          <h2 class="centeralign">{{prop.price}}</h2>
+        </mat-card-content>
+      </mat-card>
+      <br><br>
+    </div>
+
+</div>
+</div>
