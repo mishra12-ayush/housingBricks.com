@@ -8,6 +8,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
 import {MatListModule} from '@angular/material/list';
 import {MatSelectModule} from '@angular/material/select';
+import {MatGridListModule} from '@angular/material/grid-list';
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { AppRoutingModule } from './app-routing/app-routing.module';
 
@@ -24,6 +25,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { DealsComponent } from './deals/deals.component';
+import { PropertydetailComponent } from './propertydetail/propertydetail.component';
 
 
 @NgModule({
@@ -34,7 +36,8 @@ import { DealsComponent } from './deals/deals.component';
     HomeComponent,
     AboutComponent,
     ContactusComponent,
-    DealsComponent
+    DealsComponent,
+    PropertydetailComponent
   ],
   imports: [
     BrowserModule,
@@ -46,6 +49,7 @@ import { DealsComponent } from './deals/deals.component';
     MatInputModule,
     MatListModule,
     MatSelectModule,
+    MatGridListModule,
     MatFormFieldModule,
     AppRoutingModule
   ],

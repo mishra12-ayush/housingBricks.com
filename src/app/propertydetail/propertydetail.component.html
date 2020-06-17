@@ -1,0 +1,23 @@
+<div class="pdcontainer" fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="10px">
+    <h1>Details</h1><br>
+  <div *ngIf="property" columnHeight="600px"  class="">
+      <img src="{{property.image}}" alt="">
+    <mat-grid-list cols="2" rowHeight="2:1">
+      <mat-grid-tile *ngFor="let prop of property.images"><img src="{{prop.image}}" class="tileimage" alt=""></mat-grid-tile>
+    </mat-grid-list>
+  </div>
+  <div *ngIf="property" class="">
+    <h2>{{property.address}}</h2><br>
+    <p class="lineheight">{{property.maindescription}}</p><br>
+    <br>
+    <p>BEDROOMS :<i class="fa fa-bed fa-2x" aria-hidden="true"></i><b>{{property.beds}}</b></p><br>
+    <p>BATHROOMS :<i class="fa fa-bath fa-2x" aria-hidden="true"></i><b>{{property.bathrooms}}</b></p><br>
+    <p>CARPORTS :<i class="fa fa-car fa-2x" aria-hidden="true"></i><b>{{property.carsize}}</b></p><br>
+    <h3><u>Agent Name:</u> {{property.agent}}</h3><br>
+    <hr>
+    <h3>Non Negotiable</h3>
+    <h3>{{property.price}}</h3>
+  </div>
+  <button mat-button class="back" (click)="goBack()">BACK</button><br><br>
+
+</div>

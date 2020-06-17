@@ -12,4 +12,8 @@ export class PropertyService {
   getProperty(): propertyclass[] {
     return propertyconst;
   }
+
+  getAProperty(id: string): propertyclass {
+    return propertyconst.filter((prop) => (prop.id === id))[0];
+  }
 }

@@ -73,7 +73,7 @@
 
     <div fxFlex="75" fxLayout="column" fxLayoutAlign="space-around center" >
       <h1>Results :</h1> <hr><br><br>
-    <div fxFlex   *ngFor="let prop of property">
+    <div fxFlex   *ngFor="let prop of property" [routerLink]="['/propertydetail',prop.id]">
 
       <mat-card class="propertycard" >
         <mat-card-header ><mat-card-subtitle><b>Agent Name :</b>{{prop.agent}}</mat-card-subtitle></mat-card-header>
