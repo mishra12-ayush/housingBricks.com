@@ -10,6 +10,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatSelectModule} from '@angular/material/select';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatDialogModule } from '@angular/material/dialog';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 
 import 'hammerjs';
@@ -26,6 +27,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { DealsComponent } from './deals/deals.component';
 import { PropertydetailComponent } from './propertydetail/propertydetail.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -37,7 +39,8 @@ import { PropertydetailComponent } from './propertydetail/propertydetail.compone
     AboutComponent,
     ContactusComponent,
     DealsComponent,
-    PropertydetailComponent
+    PropertydetailComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +54,11 @@ import { PropertydetailComponent } from './propertydetail/propertydetail.compone
     MatSelectModule,
     MatGridListModule,
     MatFormFieldModule,
+    MatDialogModule,
     AppRoutingModule
+  ],
+  entryComponents: [
+    LoginComponent
   ],
   providers: [
     LandingService,
