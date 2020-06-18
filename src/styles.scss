@@ -7,6 +7,7 @@ $header-grey: #2e2e2d;
 *{
   padding: 0;
   margin: 0;
+
 }
 .flex-spacer {
   flex: 1 1 auto;
@@ -41,4 +42,16 @@ body{
   text-shadow: 2px;
   font-size: 17px;
   font-weight: bolder;
+}
+.back{
+  border-top: 2px solid black;
+  height: 250px;
+  background-image: url('/assets/images/back.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 300px;
+}
+.backheading{
+  font-size: 70px;
+  color: black;
+
 }
