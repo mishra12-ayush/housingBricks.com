@@ -12,6 +12,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { ReactiveFormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 
@@ -30,6 +32,7 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { DealsComponent } from './deals/deals.component';
 import { PropertydetailComponent } from './propertydetail/propertydetail.component';
 import { LoginComponent } from './login/login.component';
+import { HighlightDirective } from './directives/highlight.directive';
 
 
 @NgModule({
@@ -42,7 +45,8 @@ import { LoginComponent } from './login/login.component';
     ContactusComponent,
     DealsComponent,
     PropertydetailComponent,
-    LoginComponent
+    LoginComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
@@ -58,6 +62,8 @@ import { LoginComponent } from './login/login.component';
     FormsModule,
     MatCheckboxModule,
     MatInputModule,
+    MatSlideToggleModule,
+    ReactiveFormsModule,
     MatDialogModule,
     AppRoutingModule
   ],

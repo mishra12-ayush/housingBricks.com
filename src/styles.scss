@@ -26,7 +26,7 @@ $header-grey: #2e2e2d;
 .container {
     margin: 30px;
     display:flex;
-    padding: 16px;
+    padding: 25px;
 }
 body{
   background-color: #ebeced;
@@ -55,4 +55,10 @@ body{
   font-size: 70px;
   color: black;
 
+}
+.highlight {
+    background-color: #b8b6ba;
+    border: 1px solid #5d5c5e;
+    z-index: 1;
+    transform: scale(1.01);
 }

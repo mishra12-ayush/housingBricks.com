@@ -6,6 +6,7 @@ import { ContactusComponent } from '../contactus/contactus.component';
 import { DealsComponent } from '../deals/deals.component';
 import { PropertydetailComponent } from '../propertydetail/propertydetail.component';
 
+
 export const routes: Routes =[
   { path: 'home',  component: HomeComponent },
   { path: 'about',  component: AboutComponent },

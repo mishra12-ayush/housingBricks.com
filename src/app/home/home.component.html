@@ -6,7 +6,7 @@
   <br><br><br>
 <div  *ngFor="let land of landing">
 
-      <mat-card class="card">
+      <mat-card class="card" appHighlight>
         <mat-card-header><mat-card-title><h2>{{land.heading}}</h2></mat-card-title></mat-card-header>
         <img mat-card-image src="{{land.image}}" alt="housingBricks">
         <mat-card-content>

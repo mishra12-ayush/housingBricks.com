@@ -4,17 +4,17 @@ export const leaderconst: leaderclass[] =[
   {
     name:'Richard Alpert',
     designation:'CEO & Founder',
-    image:'/assets/images/ceo.jpg'
+    image:'/assets/images/ceo.jfif'
   },
   {
     name:'Paul McCartney',
     designation:'Co-Founder',
-    image:'/assets/images/co-found.jpg'
+    image:'/assets/images/co-found.jfif'
   },
   {
     name:'John Lennon',
     designation:'Head Operations & Planning',
-    image:'/assets/images/sales.jpg'
+    image:'/assets/images/head-op.jpg'
   },
   {
     name:'Janis Joplin',

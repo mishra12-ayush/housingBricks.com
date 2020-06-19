@@ -6,14 +6,14 @@
 
 <div class="container"
   fxLayout="column"
-  fxLayoutGap="10px">
+  fxLayoutGap="27px">
 
 
 
   <div fxFlex>
     <div fxLayout="row" fxLayout.gt-sm="row">
       <div fxFlex="70">
-        <h2>Our History</h2>
+        <h2><u>Our History</u></h2>
         <p>Housingbricks.com is a high-end property portal that caters to a global market with its unique services and novel online features. Having been launched in the year 2015. Housingbricks has quickly risen to being the No. 1 Property Portal </p><br>
         <p>The Housingbricks design is based on rigorous research, unique product developments, and innovative initiative which has been readily accepted by users. In an attempt to best serve the users, features on the Housingbricks realty portal are constantly invented, evaluated and upgraded.</p><br>
         <p>Till date, Housingbricks.com has successfully hosted 75 domestic property shows </p>
@@ -77,13 +77,15 @@
     </div>
   </div>
 
-  <div fxFlex>
+    <div fxFlex fxLayout="column">
+      <h2><u><b>The Team</b>- A Foundation Laid Strong</u></h2><br>
+      <p>Starting in 2015 with just 3 People at the Core,<br> Today We're a Strong team of 40 Corporate Crafters and 100+ Site Operatives.</p>
     <mat-list fxFlex>
-      <mat-list-item  *ngFor="let lead of Leader">
+      <mat-list-item  *ngFor="let lead of leader">
         <img matListAvatar src="{{lead.image}}" alt="{{lead.name}}">
-        <h3 matLine>{{lead.name}}</h3>
+        <h3 matLine><b>{{lead.name}}</b></h3>
         <p matLine><span>{{lead.designation}}</span></p>
       </mat-list-item>
     </mat-list>
-  </div>
+    </div>
 </div>
