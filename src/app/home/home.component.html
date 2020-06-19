@@ -1,20 +1,46 @@
 <div class="landingdiv">
+  <div fxFlex fxLayout="column wrap" fxLayoutAlign="space-evenly start" fxLayoutGap="40px" >
 
-<br><br><br>
-<div fxFlex fxLayout="column wrap" fxLayoutAlign="space-evenly start" fxLayoutGap="20px" >
-  <h1 class="grab">Our Featured Properties  <i class="fa fa-hand-o-right" aria-hidden="true"></i> &nbsp;    <button class="dealbtn" type="button" name="button" routerLink="/deals">DEALS</button></h1><hr>
-  <br><br><br>
-<div  *ngFor="let land of landing">
+          <h1 class="grab">Our Featured Properties  <i class="fa fa-hand-o-right" aria-hidden="true"></i> &nbsp;    <button class="dealbtn" type="button" name="button" routerLink="/deals">DEALS</button></h1><hr>
 
-      <mat-card class="card" appHighlight>
-        <mat-card-header><mat-card-title><h2>{{land.heading}}</h2></mat-card-title></mat-card-header>
-        <img mat-card-image src="{{land.image}}" alt="housingBricks">
-        <mat-card-content>
-          <h2>{{land.title}}</h2>
-          <p>{{land.description}}</p>
-        </mat-card-content>
-        <mat-card-actions><button mat-button>Find more</button></mat-card-actions>
-      </mat-card>
-      <hr>
+        <br><br><br>
+        <div fxFlex fxLayout="row wrap" fxLayoutAlign="space-evenly start" fxLayoutGap="400px" >
+
+                    <div fxFlex fxLayout="column wrap" fxLayoutAlign="space-evenly start" fxLayoutGap="40px" >
+                      <br><br><br>
+                      <div  *ngFor="let land of landing">
+
+                          <mat-card class="card" appHighlight>
+                            <mat-card-header><mat-card-title><h2>{{land.heading}}</h2></mat-card-title></mat-card-header>
+                            <img mat-card-image src="{{land.image}}" alt="housingBricks">
+                            <mat-card-content>
+                              <h2>{{land.title}}</h2>
+                              <p>{{land.description}}</p>
+                            </mat-card-content>
+                            <mat-card-actions><button mat-button>Find more</button></mat-card-actions>
+                          </mat-card>
+                          <hr>
+                          <br><br>
+                        </div>
+                    </div>
+
+                    <div fxFlex class="sellerdiv">
+                      <p class="sellerheading">How are <b>Sellers Rated</b></p>
+                      <p class="sellersubheading">We pick the best sellers for you who are best in class in various aspects</p>
+                      <img src="/assets/images/seller.png" alt="sellers">
+                      <h3>High Response Rate</h3>
+                      <p>We pick sellers for you who give you priority. Over 90% of our top sellers respond to enquiries within the first 24 hours!</p>
+                      <br><br>
+                      <h3>Wide Coverage</h3>
+                      <p>Sellers with a wide variety of properties are more likely to satisfy your demands. More the options, better is your decision</p>
+                      <br><br>
+                      <h3>Deals Closed</h3>
+                      <p>We choose sellers who have previously closed deals with similar requirement as you have. They'll understand your needs better.</p>
+                      <br><br>
+                      <h3>Rated & Reviewed</h3>
+                      <p>Testimonials from genuine buyers are the best way to judge a seller. Better the ratings, better will be your experience.</p>
+                    </div>
+
+        </div>
 </div>
 </div>
