@@ -71,7 +71,7 @@
     </div>
 
 
-    <div fxFlex="75" fxLayout="column" fxLayoutAlign="space-around center" >
+  <div *ngIf="property" fxFlex="75" fxLayout="column" fxLayoutAlign="space-around center" >
       <h1>Results :</h1> <hr><br><br>
     <div fxFlex   *ngFor="let prop of property" [routerLink]="['/propertydetail',prop.id]" >
 
@@ -88,5 +88,8 @@
       <br><br>
     </div>
 
-</div>
+  </div>
+  <div [hidden]="property">
+    <mat-spinner></mat-spinner><h4>Loading...</h4>
+  </div>
 </div>

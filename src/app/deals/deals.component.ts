@@ -22,7 +22,7 @@ export class DealsComponent implements OnInit {
   constructor(private propertyservice: PropertyService) { }
 
   ngOnInit() {
-    this.property = this.propertyservice.getProperty();
+    this.propertyservice.getProperty().subscribe((property) => this.property = property);
   }
 
 }

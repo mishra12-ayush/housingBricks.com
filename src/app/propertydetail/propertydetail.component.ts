@@ -17,7 +17,7 @@ export class PropertydetailComponent implements OnInit {
 
   ngOnInit() {
     const id= this.route.snapshot.params['id'];
-    this.property= this.propertyservice.getAProperty(id);
+    this.propertyservice.getAProperty(id).subscribe((property) => this.property= property);
   }
 
   goBack(): void {

@@ -80,12 +80,15 @@
     <div fxFlex fxLayout="column">
       <h2><u><b>The Team</b>- A Foundation Laid Strong</u></h2><br>
       <p>Starting in 2015 with just 3 People at the Core,<br> Today We're a Strong team of 40 Corporate Crafters and 100+ Site Operatives.</p>
-    <mat-list fxFlex>
+    <mat-list *ngIf="leader" fxFlex>
       <mat-list-item  *ngFor="let lead of leader">
         <img matListAvatar src="{{lead.image}}" alt="{{lead.name}}">
         <h3 matLine><b>{{lead.name}}</b></h3>
         <p matLine><span>{{lead.designation}}</span></p>
       </mat-list-item>
     </mat-list>
+
+    <div [hidden]="leader">
+      <mat-spinner></mat-spinner><h4>Loading...</h4>
     </div>
 </div>
